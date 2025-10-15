@@ -1,5 +1,8 @@
 public class Calculator {
-    public int divide(int a, int b) {
-        return a / b; // ArithmeticException (division by zero)
+    public static void main(String[] args) {
+        Integer a = 2;
+        Integer b= 0;
+        Integer c = a/b;
+        System.out.println(c);
     }
-        result = result / 0;
+}
