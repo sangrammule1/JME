@@ -24,7 +24,7 @@ public class Calculator {
         Object number = Integer.valueOf(100);
 
         // Invalid cast → Integer cannot be cast to String
-        String value = (String) number;
+String value = (number instanceof String) ? (String) number : null;
         System.out.println(value);
     }
 
@@ -34,5 +34,4 @@ public class Calculator {
         System.out.println(value);
     }
 }
-
 
