@@ -3,8 +3,9 @@ import java.util.List;
 
 public class Calculator {
     public static void main(String[] args) {
-        causeIndexException();
+        causeArrayIndex();
         causeCastException();
+        causeIndexException();
     }
 
     // ❌ This will cause IndexOutOfBoundsException
@@ -18,7 +19,7 @@ public class Calculator {
         System.out.println("Value: " + value);
     }
 
-    // ❌ This will cause ClassCastException
+    //  This will cause ClassCastException
     public static void causeCastException() {
         Object number = Integer.valueOf(100);
 
@@ -26,4 +27,12 @@ public class Calculator {
         String value = (String) number;
         System.out.println(value);
     }
+
+    public static void causeArrayIndex() {
+        int[] numbers = {10, 20, 30};
+        int value = numbers[5];
+        System.out.println(value);
+    }
 }
+
+
