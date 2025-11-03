@@ -3,8 +3,8 @@ import java.util.List;
 
 public class Calculator {
     public static void main(String[] args) {
-        causeArrayIndex();
         causeCastException();
+        causeArrayIndex();
         causeIndexException();
     }
 
